@@ -1,0 +1,243 @@
+/* top nav-bar */
+
+#page-logo {
+    height: 40px;
+}
+
+.navbar a {
+    color: #318C9E !important;
+}
+
+.navbar a:hover {
+    color: #f3e2d3 !important;
+}
+
+.navbar a.active {
+    color: white !important;
+}
+
+
+/* carousel */
+
+.carousel-caption h1 {
+    font-family: 'Dancing Script', cursive;
+    text-shadow: 1px 1px 4px black;
+}
+
+.carousel-caption p.lead {
+    text-shadow: 2px 2px 2px black;
+}
+
+
+/* scrollbarr */
+
+ ::-webkit-scrollbar {
+    width: 15px;
+}
+
+ ::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+ ::-webkit-scrollbar-thumb {
+    background: #888;
+}
+
+ ::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+
+/* input fields and forms */
+
+.review-list {
+    height: 50vh;
+    border: 1px solid gray;
+    overflow-y: scroll;
+}
+
+#review-box-form ul {
+    padding-left: 0px !important;
+}
+
+.list-group-item {
+    border-right: none !important;
+    border-left: none !important;
+    border-top: none !important;
+}
+
+#review-input-field {
+    border: 1px solid gray;
+    border-top: 0px;
+}
+
+#review-input-field {
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.sign-in-form {
+    margin-bottom: 46vh;
+}
+
+
+/* stars */
+
+.rate {
+    float: left;
+    height: 46px;
+    padding: 0 10px;
+}
+
+.stars-given {
+    height: 30px;
+    font-size: 20px;
+    color: #ffc700;
+}
+
+.stars-not-given {
+    height: 30px;
+    font-size: 20px;
+    color: #ccc;
+}
+
+.rate:not(:checked)>input {
+    position: absolute;
+    top: -9999px;
+}
+
+.rate:not(:checked)>label {
+    float: right;
+    width: 1em;
+    overflow: hidden;
+    white-space: nowrap;
+    cursor: pointer;
+    font-size: 30px;
+    color: #ccc;
+}
+
+.rate:not(:checked)>label:before {
+    content: '★ ';
+}
+
+.rate>input:checked~label {
+    color: #ffc700;
+}
+
+.rate:not(:checked)>label:hover,
+.rate:not(:checked)>label:hover~label {
+    color: #318C9E;
+}
+
+
+/* images */
+
+.article-thumbnail {
+    max-width: 200px;
+}
+
+.article-big-image {
+    max-width: 700px;
+}
+
+
+/* map */
+
+.flexible-container {
+    position: relative;
+    padding-bottom: 56.25%;
+    padding-top: 30px;
+    height: 0;
+    overflow: hidden;
+}
+
+.flexible-container iframe,
+.flexible-container object,
+.flexible-container embed {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+
+/* cards and articles*/
+
+.card.about-us {
+    border: none;
+}
+
+.card-text {
+    text-align: justify;
+}
+
+.main-card-title:hover,
+.article-title:hover,
+a.breadcrumb-text:hover,
+.map-title:hover,
+.full-article-paragraph {
+    color: #DB9D67 !important;
+}
+
+.main-card-title,
+.article-title,
+.breadcrumb-text,
+.review-title,
+.user-name,
+.about-us-title,
+.map-title,
+.full-article {
+    color: #318C9E;
+    text-decoration: none;
+}
+
+div.card-body {
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.article {
+    border-bottom: 1px solid rgba(8, 8, 8, 0.25);
+    padding: 10px;
+}
+
+
+/* pagination */
+
+.page-link.list-group-item-light {
+    color: #318C9E;
+}
+
+.page-link.list-group-item-light:hover {
+    color: #318C9E;
+    background-color: rgba( 219, 157, 103, 0.5);
+}
+
+
+/* buttons and badges */
+
+.btn-main:hover {
+    background-color: #DB9D67 !important;
+    border-color: #DB9D67 !important;
+}
+
+.btn-main {
+    background-color: #318C9E !important;
+    border-color: #318C9E !important;
+    color: #fff !important;
+}
+
+.article-badge {
+    background-color: #DB9D67;
+}
+
+.about-us-link.nav-link.active {
+    background-color: #DB9D67 !important;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+}
+
+.nav.nav-pills {
+    border-bottom: 1px solid #DB9D67;
+}

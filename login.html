@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Site for humans</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+    <link rel="Stylesheet" href="./js/Form-Field-Validation-jQuery-Validin/validin.css" type="text/css" />
+    <link rel="stylesheet" href="./css/style.css">
+
+</head>
+
+<body>
+    <!-- header -->
+    <nav class="navbar navbar-expand-sm navbar-dark fixed-top bg-dark">
+        <div class="container-fluid ">
+
+            <a class="navbar-brand" href="index.html"><img src="./images/lightsaber-logo.png" alt="green lightsaber" id="page-logo"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+            <form class="d-flex">
+                <div class="collapse navbar-collapse" id="navbarCollapse">
+                    <ul class="navbar-nav me-auto mb-2 mb-md-0">
+                        <li class="nav-item">
+                            <a class="nav-link" href="./index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./articles.html">Articles</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./reviews.html">Reviews</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="./login.html">Profile</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./about-us.html">About</a>
+                        </li>
+                    </ul>
+            </form>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container">
+        <!-- breadcrubm -->
+        <div class="row">
+            <div class="col">
+                <nav class="pt-4 mt-5" aria-label="breadcrumb">
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item"><a href="./index.html" class="breadcrumb-text">Home</a></li>
+                        <li class="breadcrumb-item active breadcrumb-text" aria-current="page">Your profile</li>
+                    </ol>
+                </nav>
+            </div>
+        </div>
+
+        <div class="row">
+            <!-- toggle sign-in form button -->
+            <div class="col-12 col-lg-6 col-xxl-4 d-grid gap-2 pb-3">
+                <button class="btn btn-warning signup-btn collapse-btn" type="button" data-bs-toggle="collapse" data-bs-target=".collapse-form" aria-expanded="false" aria-controls="collapse-form">
+                        Already have an account? Sign in!
+                    </button>
+            </div>
+        </div>
+        <!-- togglable sign in form -->
+        <div class="row">
+            <div class="col-12 col-lg-6 col-xxl-4">
+                <div class="collapse collapse-form hide">
+                    <div class="card card-body sign-in-form">
+                        <h4 class="fw-light pb-2 text-center">Sign in!</h4>
+                        <form action="" novalidate>
+                            <div class="input-group mb-3">
+                                <span class="input-group-text" id="username-addon">@</span>
+                                <input type="text" id="username-input" class="form-control" placeholder="Enter your username" aria-label="Username" aria-describedby="username-addon" required>
+                            </div>
+                            <div class="mb-3">
+                                <input type="password" id="input-password" class="form-control" placeholder="Password">
+                            </div>
+                            <div class="d-grid gap-2">
+                                <button type="submit" class="btn btn-main">Sign in</button>
+                            </div>
+                            <div class="text-center pt-2">
+                                <a href="">Forgot your password?</a>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- registration form -->
+        <div class="row">
+            <div class="col-12 col-lg-6 col-xxl-4">
+                <div class="collapse collapse-form show">
+                    <div class="card card-body pb-2 mb-4">
+                        <h4 class="fw-light pb-2 text-center">Create an account</h4>
+                        <form action="" id="registration-form" novalidate>
+
+                            <div class="input-group mb-3">
+                                <span class="input-group-text" id="username-addon">@</span>
+                                <input type="text" id="username-input" class="form-control" placeholder="Username*" aria-label="Username" aria-describedby="username-addon" required>
+                            </div>
+
+                            <div class="mb-3">
+                                <input type="email" validate="email" class="form-control" id="email-input" aria-describedby="emailHelp" placeholder="Email address*" required>
+                                <div id="emailHelp" class="form-text">We'll never share your email with anyone else</div>
+                            </div>
+
+                            <div class="mb-3">
+                                <input type="password" validate="min_length:8|max_length:20" id="input-password" class="form-control must_match" aria-describedby="passwordHelp" placeholder="Password*" required>
+                                <div id="passwordHelp" class="form-text">Must be 8-20 characters long</div>
+                            </div>
+
+                            <div class="mb-3">
+                                <input type="password" id="repeat-password" class="form-control" validate="match:.must_match" placeholder="Confirm password*" required>
+                            </div>
+
+                            <div class="mb-3">
+                                <input type="text" validate="name" id="first-name" class="form-control" placeholder="First name*" required>
+                            </div>
+
+                            <div class="mb-3">
+                                <input type="text" id="last-name" class="form-control" placeholder="Last name">
+                            </div>
+                            <div>
+                                <select class="form-select" aria-label="Choose country" required>
+                                    <option selected disabled value="">Country*</option>
+                                    <option value="1">Latvia</option>
+                                    <option value="2">Lithuania</option>
+                                    <option value="3">Estonia</option>
+                                </select>
+                            </div>
+
+                            <!-- checkboxes -->
+                            <div class="my-3 form-check">
+                                <input type="checkbox" class="form-check-input" id="terms-and-conditions-checkbox" required>
+                                <label class="form-check-label" for="terms-and-conditions-checkbox">Accept the <a href="#">Terms & Conditions</a>*</label>
+                                <div class="invalid-feedback">
+                                    You must agree before submitting.
+                                </div>
+                            </div>
+
+                            <div class="mb-3 form-check">
+                                <input type="checkbox" class="form-check-input" id="newsletter-checkbox" checked>
+                                <label class="form-check-label" for="newsletter-checkbox">Yes, I would like to recieve the newsletter!</label>
+                            </div>
+
+                            <div class="d-grid gap-2">
+                                <button type="submit" class="btn btn-main" enabled>Register</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+    </div>
+    <!-- container ends -->
+
+    <!-- footer -->
+    <footer>
+        <hr class="mt-5">
+        <div class="text-center text-muted">&#169 CopyCat 2021</div>
+    </footer>
+
+
+
+
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="./js/Form-Field-Validation-jQuery-Validin/validin.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
+    <script src="./js/validate.js"></script>
+    <script src="./js/main.js"></script>
+</body>
+
+</html>

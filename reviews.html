@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Site for humans</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+
+
+</head>
+
+<body>
+    <!-- header -->
+    <nav class="navbar navbar-expand-sm navbar-dark fixed-top bg-dark">
+        <div class="container-fluid">
+
+            <a class="navbar-brand" href="index.html"><img src="./images/lightsaber-logo.png" alt="green lightsaber" id="page-logo"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+            <form class="d-flex">
+                <div class="collapse navbar-collapse" id="navbarCollapse">
+                    <ul class="navbar-nav me-auto mb-2 mb-md-0">
+                        <li class="nav-item">
+                            <a class="nav-link" href="./index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./articles.html">Articles</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="./reviews.html">Reviews</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./login.html">Profile</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./about-us.html">About</a>
+                        </li>
+                    </ul>
+                </div>
+            </form>
+        </div>
+    </nav>
+
+
+    <div class="container">
+        <!-- breadcrubms -->
+        <div class="row pt-3">
+            <div class="col">
+                <nav class="pt-4 mt-5" aria-label="breadcrumb">
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item"><a href="./index.html" class="breadcrumb-text">Home</a></li>
+                        <li class="breadcrumb-item active breadcrumb-text" aria-current="page">Reviews</li>
+                    </ol>
+                </nav>
+            </div>
+        </div>
+
+
+
+        <div class="row">
+            <div class="col">
+                <h2 class="review-title">Leave a review</h2>
+            </div>
+        </div>
+        <!-- reviews -->
+        <div class="row">
+            <div class="col">
+                <form id="review-box-form">
+                    <div class="review-list">
+                        <ul id="list-group">
+                            <li class="review-item list-group-item list-group-item-light ">
+                                <div class="row">
+                                    <div class="col">
+                                        <span class="user-name lead fw-bold mx-3">Minna </span>
+                                        <span class="review-sent fw-lighter">02.04.2021 17:48</span>
+                                    </div>
+                                    <div class="col d-flex justify-content-end">
+                                        <span class="stars-given">★</span>
+                                        <span class="stars-not-given">★</span>
+                                        <span class="stars-not-given">★</span>
+                                        <span class="stars-not-given">★</span>
+                                        <span class="stars-not-given">★</span>
+                                    </div>
+                                </div>
+                                <div class="review pt-2"> Chew foot cry louder at reflection reaches under door into adjacent room so push your water glass on the floor. Pee in human's bed until he cleans the litter box chase imaginary bugs claws in your leg please let me outside
+                                    pouty face yay! wait, it's cold out please let me inside pouty face oh, thank you rub against mommy's leg oh it looks so nice out, please let me outside again the neighbor cat was mean to me please let me back inside
+                                    or mice. </div>
+                            </li>
+
+                            <li class="review-item list-group-item list-group-item-light ">
+                                <div class="row">
+                                    <div class="col">
+                                        <span class="user-name lead fw-bold mx-3">Muris </span>
+                                        <span class="review-sent fw-lighter">29.03.2021 11:55</span>
+                                    </div>
+                                    <div class="col d-flex justify-content-end">
+                                        <span class="stars-given">★</span>
+                                        <span class="stars-given">★</span>
+                                        <span class="stars-not-given">★</span>
+                                        <span class="stars-not-given">★</span>
+                                        <span class="stars-not-given">★</span>
+                                    </div>
+                                    <div class="review pt-2"> Gate keepers of hell murr i hate humans they are so annoying jump on counter removed by human jump on counter again removed by human meow before jumping on counter this time to let the human know am coming back and
+                                        scream for no reason at 4 am pee in human's bed until he cleans the litter box. </div>
+                            </li>
+                        </ul>
+                        </div>
+
+                        <!-- review input field -->
+                        <div id="review-input-field">
+                            <div class="row">
+                                <div class="col-sm-12 col-md-6 col-lg-4">
+                                    <div>
+                                        <label for="review-username" class="form-label mt-3">Name: </label>
+                                        <input type="text" class="form-control" id="review-username" placeholder="Insert Your Name Here" aria-label="user-name">
+                                    </div>
+                                </div>
+                                <div class="col-sm-12 col-md-6 col-lg-4">
+                                    <div class="mt-3">My review: </div>
+                                    <div class="rate">
+                                        <input type="radio" id="star5" name="rate" value="5" />
+                                        <label for="star5" title="5 stars">5 stars</label>
+                                        <input type="radio" id="star4" name="rate" value="4" />
+                                        <label for="star4" title="4 stars">4 stars</label>
+                                        <input type="radio" id="star3" name="rate" value="3" />
+                                        <label for="star3" title="3 stars">3 stars</label>
+                                        <input type="radio" id="star2" name="rate" value="2" />
+                                        <label for="star2" title="2 stars">2 stars</label>
+                                        <input type="radio" id="star1" name="rate" value="1" />
+                                        <label for="star1" title="1 star">1 star</label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-sm-12 col-lg-10">
+
+                                    <label for="review-input" class="form-label mt-3">Help others by sharing your feedback:</label>
+                                    <textarea class="form-control mb-3" id="review-input" rows="3" placeholder="..."></textarea>
+
+                                </div>
+                                <div class="col-sm-12 col-lg-2 mb-3 d-grid gap-2">
+                                    <button type="submit" class="btn btn-main align-self-end">Send</button>
+                                </div>
+                            </div>
+                        </div>
+                </form>
+                </div>
+            </div>
+        </div>
+
+        <!-- footer -->
+        <footer>
+            <hr class="mt-5">
+            <div class="text-center text-muted">&#169 CopyCat 2021</div>
+        </footer>
+
+
+
+
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
+        <script src="./js/main.js"></script>
+</body>
+
+</html>
