@@ -101,7 +101,6 @@ $('#review-box-form').submit(function(event) {
             alert("Please, rate our product!");
             return;
     }
-
     const newReview = `
     <li class="review-item list-group-item list-group-item-light ">
     <div class="row">
@@ -121,7 +120,7 @@ $('#review-box-form').submit(function(event) {
 });
 
 
-
+// button toggles between register and sign in forms
 $('.collapse-btn').click(function() {
     let $this = $(this);
     if ($this.hasClass('collapsed')) {
