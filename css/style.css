@@ -52,7 +52,7 @@
 
 .review-list {
     height: 50vh;
-    border: 1px solid gray;
+    border: 1px solid rgba(0, 0, 0, .125);
     overflow-y: scroll;
 }
 
@@ -67,7 +67,7 @@
 }
 
 #review-input-field {
-    border: 1px solid gray;
+    border: 1px solid rgba(0, 0, 0, .125);
     border-top: 0px;
 }
 
@@ -93,6 +93,18 @@
     height: 30px;
     font-size: 20px;
     color: #ffc700;
+}
+
+.rating-stars-given {
+    height: 40px;
+    font-size: 30px;
+    color: #318C9E;
+}
+
+.rating-stars-not-given {
+    height: 40px;
+    font-size: 30px;
+    color: #ccc;
 }
 
 .stars-not-given {
@@ -228,7 +240,7 @@ div.card-body {
     color: #fff !important;
 }
 
-.article-badge {
+.brown-badge {
     background-color: #DB9D67;
 }
 
