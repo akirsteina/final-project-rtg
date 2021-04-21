@@ -4,16 +4,16 @@
     height: 40px;
 }
 
-.navbar a {
-    color: #318C9E !important;
+#cat-page-navbar a {
+    color: #318C9E;
 }
 
-.navbar a:hover {
-    color: #f3e2d3 !important;
+#cat-page-navbar a:hover {
+    color: #f3e2d3;
 }
 
-.navbar a.active {
-    color: white !important;
+nav .navbar-nav #cat-page-navbar-active {
+    color: white;
 }
 
 
@@ -57,13 +57,16 @@
 }
 
 #review-box-form ul {
-    padding-left: 0px !important;
+    padding-left: 0px;
 }
 
-.list-group-item {
-    border-right: none !important;
-    border-left: none !important;
-    border-top: none !important;
+
+/* .list-group-item  */
+
+li.review-item {
+    border-right: none;
+    border-left: none;
+    border-top: none;
 }
 
 #review-input-field {
@@ -189,7 +192,7 @@
 a.breadcrumb-text:hover,
 .map-title:hover,
 .full-article-paragraph {
-    color: #DB9D67 !important;
+    color: #DB9D67;
 }
 
 .main-card-title,
@@ -229,23 +232,45 @@ div.card-body {
 
 /* buttons and badges */
 
-.btn-main:hover {
-    background-color: #DB9D67 !important;
-    border-color: #DB9D67 !important;
+#card1-body a.btn:hover,
+#card2-body a.btn:hover,
+#card3-body a.btn:hover,
+#article1-preview a.btn:hover,
+#article2-preview a.btn:hover,
+#article3-preview a.btn:hover,
+#review-input-field button.btn:hover,
+#submit-form button.btn:hover,
+#registration-form button.btn:hover {
+    background-color: #DB9D67;
+    border-color: #DB9D67;
 }
 
-.btn-main {
-    background-color: #318C9E !important;
-    border-color: #318C9E !important;
-    color: #fff !important;
+#card1-body a.btn,
+#card2-body a.btn,
+#card3-body a.btn,
+#article1-preview a.btn,
+#article2-preview a.btn,
+#article3-preview a.btn,
+#review-input-field button.btn,
+#submit-form button.btn,
+#registration-form button.btn {
+    background-color: #318C9E;
+    border-color: #318C9E;
+    color: #fff;
 }
 
 .brown-badge {
     background-color: #DB9D67;
 }
 
-.about-us-link.nav-link.active {
-    background-color: #DB9D67 !important;
+
+/* .about-us-link.nav-link.active */
+
+.active#pills-company-tab,
+.active#pills-pricing-tab,
+.active#pills-sustainability-tab,
+.active#pills-projects-tab {
+    background-color: #DB9D67;
     border-bottom-left-radius: 0px;
     border-bottom-right-radius: 0px;
 }

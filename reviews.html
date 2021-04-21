@@ -24,7 +24,7 @@
 
             <form class="d-flex">
                 <div class="collapse navbar-collapse" id="navbarCollapse">
-                    <ul class="navbar-nav me-auto mb-2 mb-md-0">
+                    <ul class="navbar-nav me-auto mb-2 mb-md-0" id="cat-page-navbar">
                         <li class="nav-item">
                             <a class="nav-link" href="./index.html">Home</a>
                         </li>
@@ -32,7 +32,7 @@
                             <a class="nav-link" href="./articles.html">Articles</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="./reviews.html">Reviews</a>
+                            <a class="nav-link active" aria-current="page" id="cat-page-navbar-active" href="./reviews.html">Reviews</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="./login.html">Profile</a>
@@ -77,7 +77,7 @@
                 <form id="review-box-form">
                     <div class="review-list">
                         <ul id="list-group">
-                            <li class="review-item list-group-item list-group-item-light ">
+                            <li class="list-group-item list-group-item-light review-item">
                                 <div class="row">
                                     <div class="col">
                                         <span class="user-name lead fw-bold mx-3">Minna </span>
@@ -96,7 +96,7 @@
                                     or mice. </div>
                             </li>
 
-                            <li class="review-item list-group-item list-group-item-light ">
+                            <li class="list-group-item list-group-item-light review-item">
                                 <div class="row">
                                     <div class="col">
                                         <span class="user-name lead fw-bold mx-3">Muris </span>
@@ -148,7 +148,7 @@
 
                                 </div>
                                 <div class="col-sm-12 col-lg-2 mb-3 d-grid gap-2">
-                                    <button type="submit" class="btn btn-main align-self-end">Send</button>
+                                    <button type="submit" class="btn align-self-end">Send</button>
                                 </div>
                             </div>
                         </div>

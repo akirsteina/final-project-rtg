@@ -106,7 +106,7 @@ $('#review-box-form').submit(function(event) {
             return;
     }
     const newReview = `
-    <li class="review-item list-group-item list-group-item-light ">
+    <li class="list-group-item list-group-item-light review-item">
     <div class="row">
         <div class="col">
             <span class="user-name lead fw-bold mx-3">${userName}</span>
