@@ -14,6 +14,10 @@ $('#review-box-form').submit(function(event) {
     event.preventDefault();
     const userName = $('#review-username').val();
     const review = $('#review-input').val();
+    let ratingCount;
+    let previousRatingCount = $('#rating-count').html();
+    let ratingValue;
+    const previousRatingValue = $('#rating-value').html();
 
     // check for empty input fields
     if (userName === '' && review === '') {
@@ -111,8 +115,15 @@ $('#review-box-form').submit(function(event) {
         ${starsGiven}
     </div>
     <div class="review pt-2">${review}</div>
-    </li>`
-        // reser the form values
+    </li>`;
+    // add rating value and count
+
+    ratingCount = parseInt(previousRatingCount) + 1;
+    $('#rating-count').html(ratingCount);
+    ratingValue = (parseFloat((previousRatingValue * previousRatingCount) + parseFloat(starsValue)) / ratingCount).toFixed(1);
+    $('#rating-value').html(ratingValue);
+
+    // reser the form values
     $('#list-group').prepend(newReview);
     $('#review-username').val('');
     $('#review-input').val('');
