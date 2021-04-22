@@ -191,7 +191,8 @@ li.review-item {
 .article-title:hover,
 a.breadcrumb-text:hover,
 .map-title:hover,
-.full-article-paragraph {
+.full-article-paragraph,
+.register-link:hover {
     color: #DB9D67;
 }
 
@@ -202,7 +203,8 @@ a.breadcrumb-text:hover,
 .user-name,
 .about-us-title,
 .map-title,
-.full-article {
+.full-article,
+.register-link {
     color: #318C9E;
     text-decoration: none;
 }
@@ -262,9 +264,6 @@ div.card-body {
 .brown-badge {
     background-color: #DB9D67;
 }
-
-
-/* .about-us-link.nav-link.active */
 
 .active#pills-company-tab,
 .active#pills-pricing-tab,
