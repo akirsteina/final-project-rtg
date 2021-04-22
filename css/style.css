@@ -16,6 +16,21 @@ nav .navbar-nav #cat-page-navbar-active {
     color: white;
 }
 
+.navbar-toggler[aria-expanded="false"] {
+    position: absolute;
+    right: 10px;
+}
+
+.navbar-toggler.collapsed {
+    position: absolute;
+    right: 10px;
+}
+
+.navbar-toggler {
+    position: absolute;
+    right: 100px;
+}
+
 
 /* carousel */
 
